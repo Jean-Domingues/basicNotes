@@ -1,0 +1,97 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Posicionamento estático, relativo, absoluto e fixo.
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			body{
+				background: #007fc7;
+			}
+
+			#conteudo{
+				padding: 20px;
+				width:960px;
+				background:#fff;
+				margin:auto;
+				/*(por padrão um elemento já vem no posicionamento estático)*/
+				position: static;
+				}
+			p{
+				width: 400px;
+			}
+
+			#relative {
+				/*(por padrão um elemento já vem no posicionamento estático)*/
+				position: relative;
+				/*(indica-se a posição de que queremos movimentar o elemento. podemos dizer que o elemento será empurrado de tal posição)*/
+				left: 500px;
+				bottom: 150px;
+			}
+
+
+			.absolute{
+				border: 1px solid red;
+				position: absolute;
+				background:#f2f2f2;
+
+				/*(Define a posição do objeto como absoluta, isso significa que o elemento sai do fluxo normal dos elementos, e não afeta os demais, para os demais elementos, este objeto não existe)*/
+
+				top:0px; /*funciona meio que uma margem*/
+
+				/*(O alhinhamento do elemento é calculado em relação ao container em que ele está e que não tem posição estática, esta relação é direta ou seja, a posição top 0px se refere ao topo, então este elemento estara posicionado na parte superior do container) */
+			}
+			.fixed{
+				border: 1px solid red;
+				background:#f2f2f2;
+				position:fixed;
+				/*(Funciona basicamente como o posicionamento absoluto, porém ele se mantém fixo na janela do browser)*/
+
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<div id="conteudo">
+			<h1>Posicionamento</h1>
+				<p>
+					P1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p class="absolute">
+					P2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					P3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					P4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+		</div>
+	</body>
+
+</hmtl>

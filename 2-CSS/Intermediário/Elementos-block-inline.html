@@ -1,0 +1,67 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Elementos inline, block, inline-block
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			#principal{
+				background: #EEE;
+				font-size: 30px;
+
+			}
+			#principal div{
+				border: 1px solid black;
+				margin: 5px;
+			}
+			div h1{
+				font-size: 40px;
+			}
+
+
+			.display{
+				display: inline;
+				/*O display pode ser usado para mudar o comportamento de um elemento, transformando ele de block por exemplo para inline ou vice-versa*/
+			}
+			
+
+		</style>
+
+	</head>
+
+	<body>
+		<div id="principal">
+			<div>
+				<h1>
+					Elementos inline
+				</h1>
+					<p>
+						Tags como, a, img, span, são containers que ficam dispostos um ao lado do outro, e ocupam somente o espaço do tamanho do seu conteúdo.
+					</p>
+			</div>
+
+			<div>
+				<h1>
+					Elementos Block
+				</h1>
+					<p>
+						Tags como, h1, p, table, são elementos que ocupam todo o espaço da tela, e ficam dispostos um abaixo do outro.
+					</p>
+			</div>
+
+			<div>
+				<h1>
+					Elementos inline-block
+				</h1>
+					<p>
+						Tags como o display, e inline-block, tem a largura definida baseada no seu conteúdo, pórem os itens ficam um abaixo do outro quando não há mais espaço.
+					</p>
+			</div>
+
+		</div>
+	</body>
+
+</hmtl>

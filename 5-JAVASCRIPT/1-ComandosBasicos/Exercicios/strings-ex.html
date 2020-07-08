@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulando strings</title>
+</head>
+<body>
+    
+    <script>
+    let nome = prompt('Digite o seu nome completo');
+    document.body.innerHTML = `Seu nome é ${nome} <br>`;
+    document.body.innerHTML += `Seu nome tem ${nome.length} letras <br>`;  
+    document.body.innerHTML += `A segunda letra do seu nome é "${nome.slice(1,2)}" <br>`;
+    document.body.innerHTML += `A ultima vez que a letra "a" aparece no seu nome é no indice '${nome.lastIndexOf('a')}'<br>`;
+    document.body.innerHTML += `A primeira vez que "a" aparece no seu nome é no indice "${nome.indexOf('a')}" <br>`
+    document.body.innerHTML += `As ultimas 3 letras do seu nome são '${nome.slice(-3, nome.length)}'<br>`;
+    document.body.innerHTML += `As palavras do seu nome são ${nome.split(' ')}<br>`;
+    document.body.innerHTML += `Seu nome em letras minusculas é "${nome.toLowerCase()}"<br>`;
+    document.body.innerHTML += `Seu nome em letras maiusculas é "${nome.toUpperCase()}" <br>`;
+    </script>
+</body>
+</html>

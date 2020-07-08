@@ -1,0 +1,47 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Herança e especificidade
+		</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			p{
+				color: red !important; /*Define o elemento que tem maior prioridade(utilizar raramente*/
+			}
+			p{
+				color: blue;
+			}
+			/*-no caso de dois seletores iguais, o ultimo a ser declarado é que vai ser aplicado. */
+			/*seletores seguem regra de especificidade, ou seja, a regra mais específica é que será aplicada*/
+			h2{	/*3*/
+				color: yellow;
+			}
+			h2.verde{ /*2*/
+				color: green;
+			}
+			h2#azul{/*1*/
+				color: blue;
+			}
+			/*Como o id é mais especifico que a classe, ele a sobrepõe */
+		</style>
+	</head>
+
+	<body>
+		<h2>
+			herança
+		</h2>
+		<p>
+			Os elementos em css herdam propriedades de outros elementos, dai advem o termo cascata.
+		</p>
+		<h2>
+			Especificidade
+		</h2>
+		<p>
+			Os elementos tem uma regra de qual sera aplicado primeiro, quanto mais especifico o elemento, mais relevante ele sera na hora da aplicação.
+		</p>
+	
+	</body>
+
+</hmtl>

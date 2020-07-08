@@ -1,0 +1,52 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Novas tags de input html 5
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			
+		</style>
+		
+	</head>
+
+	<body >
+		<form>
+			<label for="nome">Nome</label>
+			<input type="text" name="nome" id="nome">
+			<br><br>
+			<label for="email">Email</label>
+			<input type="email"  id="email" required autofocus> <!-- required(o formulário só será enviado quando o campo estiver preenchido corretamente)-->
+			<!-- Autofocus: faz com que o campo a ser preenchido tenha um foco para o usuario -->
+			<!-- TYPE:email, permite que o navegador faça correções ao seu texto verificando se realmente é um email -->
+			<br><br>
+			<label for="numero">Numero</Label>
+			<input type="number"  id="numero" min="5" max="15" step="2" ><!--step: pula de 2 em 2-->
+			<br><br>
+			<label for="url">URL</label>
+			<input type="url"  id="url" placeholder="ex:http//www.site.com.br">
+			<br><br>
+			<label for="pesquisa">Pesquisa</label>
+			<input type="search"  id="pesquisa">
+			<br><br>
+			<label for="range">Range</label>
+			<input type="range"  id="range" min="1" max="5" value="3">
+			<br><br>
+			<label for="">data</label>
+			<input type="date"  id="data">
+			<br><br>
+			<label for="cor">Cor</label>
+			<input type="color"  id="cor">
+
+
+
+			<input type="submit" value="enviar">
+		</form>
+			
+	</body>
+
+</hmtl>

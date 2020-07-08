@@ -1,0 +1,82 @@
+/*FORMATAÇÃO INICIAL*/
+*{
+	margin: 0px;
+	padding:0px;
+}
+body{
+	background: #E0FFFF;
+	font: 16px sans-serif;
+}
+
+
+/*CABEÇALHO*/
+#cabeçalho{
+	background: linear-gradient(#20B2AA,#48D1CC);
+	border: 1px solid gray;
+	}
+#texto-logo{
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 10px 8px 5px black;
+	width: 150px;
+	font-size:2em;
+	font-weight: bold;
+	padding:30px;
+	text-align: center;
+	color:  white; 
+}
+#menu {
+	display: inline-block;
+	margin-left: 85px;
+}
+#menu a{
+	background: linear-gradient(#66CDAA,#00CED1);
+	box-shadow: 1px 2px 5px black;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 25px;
+	margin-bottom: 20px;
+}
+#menu a:hover{
+	background: white;
+	color: #00CED1;
+}
+/*CORPO*/
+#principal{
+	background: url(imagens/fundo.jpg) no-repeat fixed center / 100%;
+	padding: 20px;
+
+}
+
+
+/*CONTEUDO PRINCIPAL*/
+
+
+#conteudo{
+	width: 920px;
+	height: 500px;
+	background: white;
+	margin: 0px 40px;
+	border-radius: 30px;
+	padding: 20px;
+}
+
+
+/*RODAPÉ*/
+footer{
+	text-align: center;
+	color: white;
+	padding-top: 10px; 
+	font-size: 1.3em;
+	height: 40px;
+	background: #20B2AA;
+}
+
+/*FORMATAÇÃO GERAL*/
+a{
+	text-decoration: none;
+}
+
+.arredondar{
+	border-radius: 20px;
+}

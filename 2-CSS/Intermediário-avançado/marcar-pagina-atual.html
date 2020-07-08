@@ -1,0 +1,49 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Marcando a pagina atual
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			.selecionado {
+				color: black;
+				/*Quando eu estiver em uma page especifica, posso adicionar esta classe para diferenciar das demais*/
+			}
+
+			/*SEGUNDA FORMA DE FAZER*/
+
+			#home #navegaçao .home a, #contato .contato a{
+				background: gray;
+				color: green;
+				/*Faz de uma forma mais automatica e especifica a seleção das paginas e aplica a formatação*/
+				/*Se o usuario esta na pagina de home, no menu navegaçao, e a classe home esta aplicada, então este link será formatado*/
+			}
+
+		</style>
+	</head>
+
+	<body id="home">
+		<ul>
+			<li><a href="marcar-pagina-atual.hmtl" class="selecionado">HOME</a></li>
+			<li><a href="">CONTATO</a></li>
+			<li><a href="">FORUM</a></li>
+			<li><a href="">PAGE</a></li>
+			<li><a href="">SAIDA</a></li>
+		</ul>
+
+		<h2>Segunda forma de fazer</h2>
+
+		<ul id="navegaçao">
+			<li><a href="marcar-pagina-atual.hmtl" class="home">HOME</a></li>
+			<li><a href="">CONTATO</a></li>
+			<li><a href="">FORUM</a></li>
+			<li><a href="">PAGE</a></li>
+			<li><a href="">SAIDA</a></li>
+		</ul>
+
+	</body>
+
+</hmtl>

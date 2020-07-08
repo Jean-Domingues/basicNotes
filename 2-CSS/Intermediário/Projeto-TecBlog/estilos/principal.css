@@ -1,0 +1,90 @@
+
+/*CABEÇALHO E SELETORES*/
+.fix{
+ 	clear: both;
+ }
+body{
+	font: 16px sans-serif;
+	background:#D3D3D3;
+	
+}
+header{
+	margin: -10px;
+	background: #F7B600;
+	padding: 15px 0px 5px 0px;	
+	
+}
+#nomepag{
+	font: bold 3em "arial";
+}
+#menu {
+	font-size: 1.4em;
+	padding: 20px;
+}
+#menu a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+}
+#menu a:hover{
+	background: white;
+	color:#FFD700;
+	margin: 20px;
+}
+/*CORPO DO CONTEUDO*/
+#corpo{
+	width: 910px;
+	margin: 30px auto;
+
+}
+#principal{
+	width: 650px;
+	height: 1000px;
+	margin:0px;	
+	float: left;
+	background: #fff;
+}
+/*JANELAS LATERAIS*/
+#janelas{
+	width: 230px;
+	margin: 0px 0px;	
+	float: right;
+	font-size: 0.8em;
+	
+}
+#janela1{
+	background: #fff;
+	padding: 15px;
+}
+#janela2{
+	margin-top: 25px;
+	background: #fff;
+	padding: 15px;
+}
+
+#janela1 h2{
+	background:#ddd;
+	padding: 0px 2px 2px 4px;
+	margin-top: 0px;
+}
+#janela2 h2{
+	background:#ddd;
+	padding: 0px 2px 2px 4px;
+	margin-top: 0px;
+}
+/*CONTEUDO DAS JANELAS LATERAIS*/
+#categorias a{
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #FFD700;
+	padding: 15px;
+}
+#postagensRecentes{
+	padding: 0px 4px;
+	margin-top: -8px;
+}
+#postagensRecentes a{
+	color: #FFD700;
+	text-decoration: none;
+}
+ 

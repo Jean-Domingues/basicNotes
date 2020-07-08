@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numeros</title>
+    <style>
+        body{
+            background-color: rgb(70, 177, 105);
+            font-size: 25px;
+            color: white;
+        }
+        #caixa{
+            width: 35%;
+            height: 40%;
+            min-height: 400px;
+            padding-left: 10px;
+            text-shadow: 1px 3px 2px black;
+            box-shadow: 3px 3px 4px black;
+            margin: 50px auto;
+            background-color: rgb(95, 69, 110);
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        
+    </div>
+    <script>
+    let caixa = document.getElementById("caixa");
+    let num = Number(prompt('Digite um numero:'))
+    caixa.innerHTML = `<h1>O numero digitado foi ${num}</h1><br>`
+    caixa.innerHTML += `A raiz quadrada de ${num} é ${(num**0.5).toFixed(2)}<br>`
+    caixa.innerHTML += `${num} é inteiro: ${Number.isInteger(num)}<br>`
+    caixa.innerHTML += `Não é um numero: ${Number.isNaN(num)}<br>`
+    caixa.innerHTML += `Arredondado para cima: ${Math.ceil(num)}<br>`
+    caixa.innerHTML += `Arredondado para baixo: ${Math.floor(num)}<br>`
+    caixa.innerHTML += `Com duas casas decimais: ${num.toFixed(2)}`
+
+    </script>
+</body>
+</html>

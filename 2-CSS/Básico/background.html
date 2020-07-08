@@ -1,0 +1,63 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Cor e imagem de fundo
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			.pag{
+				/*opções de fundo, primeira maneira (background)*/
+				background-color: blue; /*(define a cor de fundo como azul)*/
+				background-size: 400px; /*define o tamanho da imagem de  fundo*/
+				background-image: url('imagens/lion.jpg');/* (define uma imagem de fundo)*/
+				background-repeat: no-repeat;/* (pode ser repeat, no-repeat, repeat-x or y)*/
+				background-attachment: scroll; /* (define o fundo commo fixo, ou scroll são se movendo conforme movimenta a página)*/
+        background-position: right center; 
+        /* (define a posição sendo o primeiro valor na horizontal e o segundo vertical, bottom, top, center, left, right, ou valores em pixel)*/
+			}
+
+			body{
+				background: #655 url('imagens/logo-r6.jpg') no-repeat scroll center / 150px; /*ultimo atributo, tamanho da imagem*/
+
+				/* Segunda maneira de definir o fundo, ordem de declaração (cor, imagem, repetição, fixo ou móvel, posicão da imagem, tamanho da imagem)*/
+
+			}
+			div{
+				background: url(imagens/logo-r6.jpg), url(imagens/fundo.png);
+				position: center, top center;
+				/*PARA UMA OU MAIS IMAGENS DE FUNDO, BASTA ADICIONARMOS UMA VIRGÚLA*/
+				background-clip: padding-box; /*define como vai ser aplicado o fundo (padding-box, border-box, content-box*/
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<div class="pag">
+			Conteúdo da página
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+		</div>
+		
+	</body>
+
+</hmtl>

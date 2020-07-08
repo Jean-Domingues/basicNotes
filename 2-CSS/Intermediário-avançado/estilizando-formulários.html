@@ -1,0 +1,68 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Estilizando formularios
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			body{
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+			}
+			fieldset{
+				padding: 1em;
+			}
+			label{
+				font-weight: bold;
+				display: block;
+				cursor: pointer; /* Modifica o comportamento do mouse quando passado em cima do nome, deixando com aspecto de link*/
+			}
+			input[type="text"]{   /* (seleciona o atributo) os colchetes servem para dizer que tal formatação será aplicada somente a inputs do tipo texto, tal seletor não está disponivel em browser mais antigos*/
+				width: 20em;
+			}
+
+		</style>
+	</head>
+
+	<body >
+		<h2>Estilizando formularios</h2>
+		<form>
+			<fieldset>
+				<!-- utilizado para agrupar elementos semelhantes -->
+				<legend>Detalhes de contato</legend><!-- Adiciona uma legenda no topo do quadro  -->
+				<div>
+					<label for="nome">Nome:</label> 
+					<input type="text" name="nome" id="nome">
+					<!--Serve como uma etiqueta para o formulario em questão, indicado pelo for , ou podemos simplesmente envolver o formulario com o label, como está feito a seguir
+						<label>Email:
+						<input type="text" name="email">
+					 	</label>
+					mas não é recomendado fazer.
+					 -->
+				</div>
+				<div>
+					<label for="email">Email:</label>
+						<input type="text" name="email" id="email">
+				 	
+
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Manter conectado</legend>
+				<div>
+					<label>
+						<input type="radio" name="conectado" id="sim">Sim
+					</label>
+				</div>
+				<div>
+					<label>
+						<input type="radio" name="conectado" id="nao">Não
+					</label>
+				</div>
+			</fieldset>
+		</form>
+</body>
+
+</hmtl>

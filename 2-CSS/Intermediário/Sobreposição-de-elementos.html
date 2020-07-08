@@ -1,0 +1,46 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Sobreposição de elementos
+		</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			#conteudo1{
+				background: blue;
+				border: 1px red solid;
+				width: 200px;
+				height: 200px;
+				position:absolute;
+				z-index: 1; 
+				/*(Propriedade que define que define qual elemento irá aparecer primeiro, assume valores numéricos de ordem crescente, quanto maior, mais afrente ele aparece*/
+			}
+			#conteudo2{
+				background: orange;
+				border: 1px red solid;
+				width: 200px;
+				height: 200px;
+				position:absolute;
+				top: 90px;
+				left: 90px;
+				z-index: 2;
+				
+
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<div id="conteudo1">
+			conteudo 1
+		</div>
+		<div id="conteudo2">
+			conteudo 2
+		</div>
+
+	</body>
+
+</hmtl>

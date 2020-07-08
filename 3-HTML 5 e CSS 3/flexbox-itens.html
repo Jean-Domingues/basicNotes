@@ -1,0 +1,85 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Flexbox itens
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			#conteudo{
+				background: #dcdcdc;
+				height: 400px;
+				display: flex; /*Display baseado em colunas*/
+				
+			}
+			.item{
+				width: 200px;
+				height: 100px;
+				background: white;
+				border: 1px solid gray;
+				margin: 10px;
+				flex-grow: 1;
+				/*
+				Define a proporção do espaço ocupado por um item, de acordo com o espaço disponivel
+				*/
+				flex-shrink: 1;
+				/*
+				Define a proporção em que o item diminuirá
+				*/
+				flex-basis: 20px;
+				/*
+				indica o tamanho inicial do flex item antes da distribuição do espaço restante
+				Não utilizar com o shrink
+				*/
+			}
+			.grow1{
+				flex-grow: 1; /* 1 = 100%*/
+			}
+			.grow2{
+				flex-grow: 2; /* 2 = 200%*/
+			}
+
+			.diminui{
+				flex-shrink: 15; /*O item diminuira 4x mais que os outros*/
+			}
+
+
+
+
+			.ordem1{
+				order: 1;
+				/*
+				Define a ordem dos elementos dispostos dentro do container
+				Todos iniciam com valor 0, o elemento com o menor valor será apresentado primeiro
+				*/
+			}
+			.ordem2{
+				order: 2;
+			}
+			.ordem3{
+				order: 3;
+			}
+			.ordem4{
+				order: 4;
+			}
+			.primeiroElemento{
+				order:-1;
+			}
+		</style>
+	</head>
+
+	<body >
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+			<div class="item">01</div>
+			<div class="item diminui">02</div>
+			<div class="item">03</div>
+			<div class="item">04</div>
+		</div>
+
+
+	</body>
+
+</hmtl>

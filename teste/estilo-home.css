@@ -1,0 +1,143 @@
+/*FORMATAÇÃO INICIAL*/
+*{
+	margin: 0px;
+	padding:0px;
+}
+body{
+	background: #E0FFFF;
+	font: 16px sans-serif;
+}
+
+
+/*CABEÇALHO*/
+#cabeçalho{
+	background: linear-gradient(#20B2AA,#48D1CC);
+	border: 1px solid gray;
+	}
+#texto-logo{
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 10px 8px 5px black;
+	width: 150px;
+	font-size:2em;
+	font-weight: bold;
+	padding:30px;
+	text-align: center;
+	color:  white; 
+}
+#menu {
+	display: inline-block;
+	margin-left: 85px;
+}
+#menu a{
+	background: linear-gradient(#66CDAA,#00CED1);
+	box-shadow: 1px 2px 5px black;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 25px;
+	margin-bottom: 20px;
+}
+#menu a:hover{
+	background: white;
+	color: #00CED1;
+}
+/*CORPO*/
+#principal{
+	background: url(imagens/fundo.jpg) no-repeat fixed center / 100%;
+	padding: 20px;
+
+}
+#conteudo{
+	width: 920px;
+	height: 1000px;
+	margin: auto;
+
+}
+#area-central{
+	width: 680px;
+	float: left;
+	background: white;
+}
+#area-lateral{
+	width: 220px;
+	float: right;
+}
+
+/*CONTEUDO PRINCIPAL*/
+
+.postagem{
+	text-align: justify;
+	padding: 20px;
+}
+.postagem h1{
+	background: #A4A4A4;
+	margin-bottom: 10px;
+	font-size: 1.7em;
+}
+.postagem p{
+	font-family: Courier New, monospace;
+}
+.postagem h2{
+	margin: 15px 0px;
+	font-size: 1.3em;
+}
+.postagem a{
+	display: inline-block;	
+	color: white;
+	background: #00CED1;
+	margin-top: 20px;
+	padding: 10px;
+}
+.postagem a:hover{
+	text-decoration: underline;
+}
+#imagem-quemsomos{
+	width: 350px;
+	margin: auto;
+	display: block;
+}
+
+
+
+/*CONTEUDO LATERAL*/
+.post-box{
+	background: white;
+	padding: 15px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	font-family: monospace;
+}
+.post-box img{
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 5px;
+	}
+.post-box h1{
+	font-size: 1.25em;
+	background: #A4A4A4;
+	padding-left: 5px;
+}
+.post-box a:hover{
+	text-decoration: underline;
+}
+
+
+
+/*RODAPÉ*/
+footer{
+	text-align: center;
+	color: white;
+	padding-top: 10px; 
+	font-size: 1.3em;
+	height: 40px;
+	background: #20B2AA;
+}
+
+/*FORMATAÇÃO GERAL*/
+a{
+	text-decoration: none;
+}
+
+.arredondar{
+	border-radius: 20px;
+}

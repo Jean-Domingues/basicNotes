@@ -1,0 +1,77 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Estilizando formularios
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			body{
+				background: #643d87 url(imagens/fundo.jpg);
+			}
+
+			#container{
+				width: 400px;
+				height: 300px;
+				margin: 0 auto;
+				border-radius: 10px;
+				margin-top: 160px;
+				background-color: rgb(255,255,255, 0.3);
+				text-align: center;
+			}
+			img#imagem-user{
+				height: 120px;
+				margin-top: -60px;
+				margin-bottom: 30px;
+			}
+			input{
+				width: 90%;
+				height: 45px;
+				margin-bottom: 5px;
+				padding-left: 40px;
+				font-size: 20px;
+			}
+			.senha{
+				background-image: url(imagens/icone-cadeado.png);
+				background-repeat: no-repeat;
+				background-position: 10px center;
+			}
+			.email{
+				background-image: url(imagens/icone-usuario.png);
+				background-repeat: no-repeat;
+				background-position: 10px center;
+			}
+			input.logar{
+				color: white;
+				background: #f79300;
+				border: 2px solid #db7d00;
+				padding: 0px 5px;
+			}
+		</style>
+	</head>
+
+	<body >
+
+		<div id="container">
+			
+			<img id="imagem-user" src="imagens/perfil.png">
+			<form>
+				<div>
+					<input class="email" type="text" name="email" id="email" placeholder="Digite seu e-mail">	
+				</div>
+				<div>
+					<input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+				</div>
+				<div>
+					<input class="logar" type="submit" value="Logar">
+				</div>
+			</form>
+
+		</div>
+
+
+	</body>
+
+</hmtl>

@@ -1,0 +1,56 @@
+<!DOCTYPE hmtl>
+
+<hmtl lang="pt-br">
+	<head>
+		<title>
+			Flexbox
+		</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			#conteudo{
+				background: #dcdcdc;
+				height: 600px;
+				display: flex; /*Display baseado em colunas*/
+				/*
+				row (um ao lado do outro)|row-reverse(inverte a ordem)|colunm (um embaixo do outro)|colunm-reverse(inverte a ordem)
+				*/
+				flex-direction: column;
+				/*
+				nowrap(se a largura do container for menor que a junção dos itens estes serão apertados para caber)|wrap(o item ira quebrar para a proxima linha)|wrap-reverse(inverte a ordem, executar para poder ver a diferença)
+				*/
+				flex-wrap: nowrap;
+				/*
+				HORIZONTAL
+				flex-start(padrão)|flex-end(colados a direita)|center(centralizados)|space-between(são distribuidos pelo espaço diponivel)|space-around(faz o mesmo que o anterior porem os itens das extremidades não ficam colados nas laterais)
+				*/
+				justify-content: center;
+				/*
+				vertical-align: 
+				stretch(padrão)|center(alinhados ao centro)|flex-start(colam na parte superior)|flex-end(colam na parte inferior)|baseline(alinha os itens com base na primeira linha de conteudo)
+				*/
+				align-items: center;
+			}
+			.item{
+				width: 100px;
+				height: 100px;
+				background: white;
+				border: 1px solid gray;
+				margin: 10px;
+			}
+		</style>
+	</head>
+
+	<body >
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+			<div class="item">01</div>
+			<div class="item">02</div>
+			<div class="item">03</div>
+			<div class="item">04</div>
+		</div>
+    
+
+	</body>
+
+</hmtl>

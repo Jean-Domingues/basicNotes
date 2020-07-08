@@ -1,0 +1,32 @@
+body{
+	background-image: url('Fotos-AnaBella/fundo.png')
+}
+a{
+	text-decoration: none;
+	color: #4b566a
+}
+header div{
+	background-color: #D2D2D0;
+	width: 885px;
+	font: bold 20px serif;
+	
+	padding: 20px 9px;
+}
+.conteudo{
+	text-align: justify;
+	width: 885px;
+	background-color: #E8E8D9;
+	padding: 20px 9px;
+}
+.titulos{
+	font-size: 20px;
+	color: #828271;
+	
+}
+footer{
+	font-size: 15px;
+	color: gray;
+	text-align: center;
+	width: 885px;
+
+}

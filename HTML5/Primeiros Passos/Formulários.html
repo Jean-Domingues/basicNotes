@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<title>Formulários</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<table border="0" align="center">
+			<tr>
+				<td>
+				<h1>Login usuário</h1><hr>
+				<form>
+					<h3>Login:<br></h3>
+					<input type="text" name="Login" value="nome">
+					<br>
+					<h3>Senha:<br></h3>
+					<input type="password" name="Senha"><br><br>
+					<input type="submit" value="Logar"> <br><br>
+					<!-- Value(valor atribuido à), não funciona em checkbox-->
+					<h4>Sexo:</h4>
+					<input type="radio" name="sexo">Masculino<br>
+					<input type="radio" name="sexo">Feminino<br>
+					<br>
+					<!--Tipos de type: text(caixa de texto), button(botão), submit(enviar o formulário), 
+					    radio(alternativa), checkbox(caixa para assinalar) -->
+					<h4>Estado:</h4>
+					<select name="Estado">
+						<option value="sp">SP</option>
+						<option value="rj">RJ</option>
+						<option value="mg">MG</option>
+						<option value="pa">PA</option>
+						<option value="mt">MT</option>
+						<option value="am">AM</option>
+					</select>
+
+					 <h4>Cursos:</h4>
+					<input type="checkbox" name="Cursos">Programação<br>
+					<input type="checkbox" name="Cursos">Portugues<br>
+					<input type="checkbox" name="Cursos">Inglês<br>
+					<input type="checkbox" name="Cursos">Matemática<br>
+					<input type="submit" value="Cadastrar">
+
+				</form>
+			</td>
+
+ 			<td>
+ 				<textarea>Digite sua reclamação...</textarea>
+
+
+ 			</td>
+
+			</tr>
+		</table>
+
+	</body>
+</html>

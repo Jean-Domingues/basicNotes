@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <style>
+        input[type=submit] {
+            display: block;
+            margin-top: 10px;
+        }
+
+        fieldset {
+            width: 400px;
+            margin: auto;
+            vertical-align: center;
+            margin-top: 150px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        legend {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Cadastro</legend>
+        <form class="form">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+
+            <label for="idade">Idade</label>
+            <input type="text" name="idade" id="idade">
+
+            <input type="submit" value="Cadastrar">
+        </form>
+        <div id="caixa">
+            
+        </div>
+    </fieldset>
+    <script>
+        function escopoPrincipal() {
+            const form = document.querySelector('form.form');
+            const pessoas = [];
+            const caixa = document.querySelector('div');
+            form.onsubmit = function (evento) {
+                evento.preventDefault();
+                let nome = form.querySelector('#nome');
+                let sobrenome = form.querySelector('#sobrenome');
+                let idade = form.querySelector('#idade');
+                
+                pessoas.push({
+                    nome:nome.value, sobrenome:sobrenome.value, idade:idade.value
+                })
+                console.log(pessoas);
+                caixa.innerHTML += `${nome.value} ${sobrenome.value} ${idade.value}`
+            }
+
+        }
+        escopoPrincipal();
+
+
+    </script>
+</body>
+
+</html>
