@@ -19,9 +19,9 @@ console.log(x);
 
 
 //JOIN 
-//trasnforma todos os valores de um array em uma string
+//transforma todos os valores de um array em uma string
 let nomes = ['jean', 'camila', 'gabriel']
-let stringDeNomes = nomes.join(' ') //parametro passado será uma string que ficara entre cada elemento
+let stringDeNomes = nomes.join('_') //parametro passado será uma string que ficara entre cada elemento
 // no caso, um espaço
 console.log(stringDeNomes);
 
