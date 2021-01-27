@@ -1,4 +1,4 @@
-/* 
+
 //converte string p numero
 let num = '23';
 num = Number(num);
@@ -31,5 +31,5 @@ console.log(Number.isNaN(num*'oi')); //retorna true se NaN(not a number) = true
 //IMPRECISÃO EM JAVASCRIPT
 console.log(0.7 + 0.1); //0.79999999
 console.log(Number(0.7 + 0.1).toFixed(2)); //corrige o problema
-*/
+
 

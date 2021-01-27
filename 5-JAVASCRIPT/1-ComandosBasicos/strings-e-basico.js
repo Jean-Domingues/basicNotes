@@ -1,5 +1,5 @@
 // COMANDOS INICIAIS JAVASCRIPT
-/*
+
 console.log(typeof criandoConstante) // comando typeof serve para mostrar o tipo de um elemento
 
 //CONVERTENDO VALORES

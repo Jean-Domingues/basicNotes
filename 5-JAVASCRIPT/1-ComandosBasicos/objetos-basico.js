@@ -1,12 +1,13 @@
-/*
+
 //COMO CRIAR OBJETOS 
 let pessoa = {
-    nome: 'jean' , idade: 19, peso: 76
+    nome: 'jean' , idade: 19, peso: 76,
 
     falarOi(){
         console.log('oi');
     }
 };
+
 //ACESSANDO OBJETOS
 console.log(pessoa.idade); //saida = 19 
 console.log(pessoa['idade']);
@@ -27,7 +28,7 @@ function pessoa (nome , idade, peso){
 }
 let jean = pessoa('jean', 18, 76);
 console.log(jean)
-*/
+
 
 const pessoa1 = {
     nome: 'jean', sobrenome:'Domingues', idade: 19,

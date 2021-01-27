@@ -8,7 +8,7 @@ SINTAXE 1:
                 }
                 chamando a função : nomeDaFuncao(valor1, valor2);
 
-SINTAXE 2:  FUNÇÃO ANÔNIMA
+SINTAXE 2:  FUNÇÃO EXPRESSÃO
 
             let somaNumeros = function (n1,n2) {
                 return n1+n2

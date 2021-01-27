@@ -1,5 +1,5 @@
-/*
-IMPORTANTE, EM JAVASCRIPT, HÁ DIVISÃO POR ZERO = INFINITY = TRUE
+
+//IMPORTANTE, EM JAVASCRIPT, HÁ DIVISÃO POR ZERO = INFINITY = TRUE
 //ARREDONDAMENTOS
 let num = 9.47840;
 console.log(Math.floor(num)); //arredonda para baixo(numero inteiro)
@@ -18,7 +18,7 @@ console.log(numRandom);
 //expresão para achar numeros aleatorios entre 5 e 10
 numRandom = Math.round(Math.random()*(10-5)+5);
 console.log(numRandom);
-*/
+
 
 //OUTRAS FUNÇÕES
 let pi = Math.PI; //Atribui a variavel o valor de pi
