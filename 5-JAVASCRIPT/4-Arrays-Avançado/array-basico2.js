@@ -59,3 +59,8 @@ const numerosSeparados = Array.from(numeros)
 //REPETE UM MESMO ELEMENTO DE UMA STRING N VEZES  
 const nums = "12345"
 let soUns =  nums[0].repeat(4) //saida: 1111
+
+
+//CRIA ARRAY E PREENCHE SUAS POSIÇÕES
+const meuNovoArray = Array(10).fill(0)
+console.log('meu array', meuNovoArray);
