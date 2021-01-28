@@ -1,4 +1,4 @@
-/*
+
 //ARRAY É CONSIDERADO UM OBJETO INDEXADO AUTOMATICAMENTE, PORÉM HÁ COMO SABER SE É UM ARRAY OU OBJETO
 let vetor = [1, 2 , 3];
 console.log(vetor instanceof Array); //retorna true se for array
@@ -19,7 +19,7 @@ console.log(x);
 
 
 //JOIN 
-//trasnforma todos os valores de um array em uma string
+//transforma todos os valores de um array em uma string
 let nomes = ['jean', 'camila', 'gabriel']
 let stringDeNomes = nomes.join(' ') //parametro passado será uma string que ficara entre cada elemento
 // no caso, um espaço
@@ -62,5 +62,5 @@ console.log(vetor.slice(-3, -1)) //Pega todos os elementos de 4 até 6, contando
 const vetor = [1, 2 , 3];
 //posso mudar somente os elementos array, não o array, não posso reatribuir
 vetor = 'jean'; //não pode
-*/
+
 

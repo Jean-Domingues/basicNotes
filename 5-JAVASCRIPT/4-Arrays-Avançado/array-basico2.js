@@ -64,3 +64,21 @@ let soUns =  nums[0].repeat(4) //saida: 1111
 //CRIA ARRAY E PREENCHE SUAS POSIÇÕES
 const meuNovoArray = Array(10).fill(0)
 console.log('meu array', meuNovoArray);
+
+
+// MÉTODOS PARA PESQUISA EM ARRAYS
+
+//Find
+const a = [1,2,3,4,5,6]
+a.find((element, index, array) => {
+  element == 1 //true
+})
+
+//FindIndex 
+
+// findIndex()funciona de forma semelhante a find(), mas retorna o índice do primeiro 
+// item que retorna verdadeiro e, se não for encontrado, retorna -1:
+
+a.findIndex((element, index, array) => {
+  element == 7 //-1
+})
