@@ -1,6 +1,6 @@
 //funções construtoras sempre começam com a palavra 'new', e também com a primeira
 //letra maiúscula, ex:  let  data = new Date();
-/*
+
 
 //VERIFICANDO SE É UM OBJETO DATE
 let data = 1;
@@ -8,8 +8,9 @@ console.log(data instanceof Date); //retorna false
 
 
 //PRIMEIRA FORMA DE UTILIZAÇÃO 
-new Date() com valor vazio, pega a data atual
-nwe Date(30000) com um valor, altera a data em ms
+
+// new Date() com valor vazio, pega a data atual
+// new Date(30000) com um valor, altera a data em ms
 const tresHoras = 60 * 60 * 3 * 1000;   //em javascript o tempo é dado em milesegundos
 const data = new Date(-tresHoras); //pega o marco zero (31/12/1969 as 21 horas) e volta 3 horas atrás
 console.log(data.toString())
@@ -43,7 +44,8 @@ console.log('O dia da semana é', data.getDay() === 1 ? 'Segunda-feira' : 'outro
 //QUINTA FORMA DE UTILIZAÇÃO (obtendo a data sem criar variaveis)
 console.log(Date.now()) //trás os milesimos de segudos desde o marco zero
 
-*/
+// Formatando datas de acordo com o formato usado na máquina ( Usando INTL)
 
-
+const data = new Date()
+const dataFormat =  new Intl.DateTimeFormat().format(data)
 
