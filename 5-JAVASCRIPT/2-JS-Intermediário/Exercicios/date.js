@@ -1,5 +1,11 @@
-const data = new Date()
+const formataData = sp => {
+  const data = new Date();
 
-const dataFormat =  new Intl.DateTimeFormat().format(data)
+  const day = data.getDate();
+  const month = data.getMonth()+1;
+  const year = data.getFullYear()
 
-console.log(dataFormat);
+  return day+sp+month+sp+year
+}
+
+console.log(formataData(''));
