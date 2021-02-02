@@ -12,6 +12,7 @@ const timer = setInterval(function(){
     console.log("oi")  //irá printar oi, a cada um segundo
 }, 1000)
 
+// ************************************************
 
 'SET TIME OUT'
 //sintaxe
@@ -33,3 +34,16 @@ const meuNovoTimer = setTimeout(()=> {
 'com o id retornado eu posso usar o clearInterval() para cancelar a execução'
 
 clearInterval(meuNovoTimer); // A função não vai executar 
+
+// ZERO DELAY
+
+/**
+ * Definindo o tempo de execução de setTimeOut para zero, a função ira executar
+ * o mais rápido possível, porém, após a execução da função atual
+ */
+
+setTimeout(() => {
+  console.log('after ')
+}, 0)
+
+console.log(' before ') // Saída: before after

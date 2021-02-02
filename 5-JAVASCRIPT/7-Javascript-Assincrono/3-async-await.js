@@ -37,4 +37,36 @@ async function executa() {
         console.log(erro)
     }
 }
-executa()
+// executa()
+
+`Para que o async "espere" a execução de uma promise, é importante se atentar que 
+não há nenhuma função concorente fora do escopo onde se está esperando uma resposta`
+
+//exemplo
+
+const doSomethingAsync = () => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve('2 frase'), 3000)
+  })
+}
+
+const doSomething = async () => {
+  console.log(await doSomethingAsync())
+}
+
+console.log('1 frase')
+doSomething()
+console.log('3 frase')
+
+//perceba que o código acima não executa da forma que você espera
+
+'este executa conforme o esperado'
+/** 
+const doSomething = async () => {
+  console.log(await doSomethingAsync())]
+  console.log('3 frase')
+}
+
+console.log('1 frase')
+doSomething()
+*/
