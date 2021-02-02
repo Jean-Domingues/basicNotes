@@ -70,3 +70,12 @@ const doSomething = async () => {
 console.log('1 frase')
 doSomething()
 */
+
+
+'Colocar a palavra async antes de uma função, faz com que ela retorne uma promise'
+
+const aFunction = async () => {
+  return 'test'
+}
+
+aFunction().then( msg => console.log(msg)) // Isto é válido
