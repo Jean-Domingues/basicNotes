@@ -1,7 +1,6 @@
 //PARA PARAR UM INTERVALO DIGITE F9(vs code)
 
-
-//SET INTERVAL
+'SET INTERVAL'
 //Seta um intervalo de tempo para uma função ser executada de tempos em tempos
 //SINTAXE 
 /*
@@ -14,7 +13,7 @@ const timer = setInterval(function(){
 }, 1000)
 
 
-//SET TIME OUT
+'SET TIME OUT'
 //sintaxe
 /*
 setTimeout(funçãoNomeada(), tempoParaComeçarExecutar);
@@ -22,5 +21,15 @@ setTimeout(function (){ ... }, tempoParaComeçarExecutar);
 */
 
 //setTimeout (seta um tempo, para que a função possa ser executada pela primeira vez)
-setTimeout(function (){ clearInterval(timer)}, 10000);
+setTimeout(function (){ clearInterval(timer)}, 3000);
 //depois de 10 segundos a função timer será pausada
+
+'Assim como em setInterval() você pode atribuir uma variável para armazernar o id do timer'
+
+const meuNovoTimer = setTimeout(()=> {
+  console.log('Passou 10 segundos');
+}, 5000);
+
+'com o id retornado eu posso usar o clearInterval() para cancelar a execução'
+
+clearInterval(meuNovoTimer); // A função não vai executar 
