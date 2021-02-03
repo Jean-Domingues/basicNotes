@@ -44,14 +44,14 @@ não há nenhuma função concorente fora do escopo onde se está esperando uma 
 
 //exemplo
 
-const doSomethingAsync = () => {
+const falaUmaFrase = () => {
   return new Promise(resolve => {
     setTimeout(() => resolve('2 frase'), 3000)
   })
 }
 
 const doSomething = async () => {
-  console.log(await doSomethingAsync())
+  console.log(await falaUmaFrase())
 }
 
 console.log('1 frase')
@@ -60,7 +60,7 @@ console.log('3 frase')
 
 //perceba que o código acima não executa da forma que você espera
 
-'este executa conforme o esperado'
+'este executa conforme o esperado, pois as funções estão no mesmo escopo'
 /** 
 const doSomething = async () => {
   console.log(await doSomethingAsync())]
