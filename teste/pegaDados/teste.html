@@ -12,12 +12,14 @@
     <div>
       <h1>Clique aqui para informar seus dados!</h1>
 
-      <button onclick="cliqueiNobotao()">⬆</button>
+      <button class="open" onclick="cliqueiNobotao(true)">⬆</button>
 
       <section id="modal">
         <div>
+          <button class="closeModal" onclick="cliqueiNobotao(false)">X</button>
           <h3>Digite seu nome:</h3>
-          <input type="text" />
+          <input type="text" onchange="gravaNome(event)" placeholder="Nome" />
+          <button type="submit" onclick="exibeNome()">Enviar</button>
         </div>
       </section>
     </div>

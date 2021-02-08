@@ -16,7 +16,7 @@ body {
 }
 
 
-button {
+button.open {
   display: block;
   font-size: 52px;
   width: 30%;
@@ -47,9 +47,22 @@ section#modal {
 section#modal div {
   background-color: white;
 
-  width: 300px;
-  height: 100px;
+  width: 220px;
+  height: 150px;
 
   padding: 20px;
   border-radius: 30px;
+
+  position: relative;
+}
+
+section#modal div button.closeModal {
+  position: absolute;
+  top: 10%;
+  right: 7%;
+}
+
+section#modal input {
+  margin: 10px 0;
+  padding: 5px;
 }

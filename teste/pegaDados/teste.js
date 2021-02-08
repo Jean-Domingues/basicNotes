@@ -1,3 +1,17 @@
-function cliqueiNobotao() {
-  document.getElementById('modal').style.display = 'flex'
+let nome;
+let lastName = 'senhor';
+
+function cliqueiNobotao(open) {
+  open? document.getElementById('modal').style.display = 'flex' :
+  document.getElementById('modal').style.display = 'none'
+}
+
+function gravaNome(campo){
+  nome = campo.target.value;
+  lastName = nome.split(' ')[1]
+}
+
+function exibeNome(){
+  alert(`Olá Sr.${lastName}, como vai você?`)
+  cliqueiNobotao(false)
 }
