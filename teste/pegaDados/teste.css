@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+button {
+  cursor: pointer;
+}
+
 
 button.open {
   display: block;

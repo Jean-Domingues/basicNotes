@@ -7,6 +7,10 @@ function cliqueiNobotao(open) {
 }
 
 function gravaNome(campo){
+  if(campo.code === 'Enter'){
+    return exibeNome()
+  }
+
   nome = campo.target.value;
   lastName = nome.split(' ')[1]
 }

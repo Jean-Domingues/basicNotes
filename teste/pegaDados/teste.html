@@ -10,7 +10,7 @@
 
   <body>
     <div>
-      <h1>Clique aqui para informar seus dados!</h1>
+      <h1>Clique aqui para informar seu nome!</h1>
 
       <button class="open" onclick="cliqueiNobotao(true)">⬆</button>
 
@@ -18,7 +18,7 @@
         <div>
           <button class="closeModal" onclick="cliqueiNobotao(false)">X</button>
           <h3>Digite seu nome:</h3>
-          <input type="text" onchange="gravaNome(event)" placeholder="Nome" />
+          <input type="text" onkeyup="gravaNome(event)" placeholder="Nome" />
           <button type="submit" onclick="exibeNome()">Enviar</button>
         </div>
       </section>
