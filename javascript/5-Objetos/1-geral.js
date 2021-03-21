@@ -48,4 +48,5 @@ const gelo = {
 Object.freeze(gelo);
 gelo.idade = 19;
 gelo.nome = 'oto nome';
-//console.log(gelo) //Saída: {nome: 'jean'}
+//console.log(gelo)
+//Saída: {nome: 'jean'}

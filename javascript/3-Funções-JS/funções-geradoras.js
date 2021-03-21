@@ -88,7 +88,7 @@ function* minhaFuncaoGeradora(){
 }
 
 const retornaFuncao = minhaFuncaoGeradora();
-retornaFuncao.next().value(); //precisa dos parenteses para a função ser executada
+retornaFuncao.next().value(); //precisa dos parenteses para a função de retorno ser executada
 retornaFuncao.next().value();
 retornaFuncao.next().value();
 

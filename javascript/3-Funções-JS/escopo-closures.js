@@ -60,7 +60,7 @@ function imprimeNome(nome) {
 function inicializa() {
     let nome = 'jean';
     setTimeout(imprimeNome(nome), 1000); 
-    //setTimeout espera uma função, porém estou mandando como parametro a execução de 
+    //setTimeout espera uma função, e estou mandando como parametro a execução de 
     // uma função, porém, o retorno desta função executada é outra função
     // por isto meu setTimeout executa minha ação corretamente
 }

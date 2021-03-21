@@ -6,7 +6,7 @@ function umaFucao() {
     console.log(arguments[0]); //por meio de arguments[indiceParametroEnviado], é possivel
     //  acessar estes parametros "perdidos"
 }
-umaFucao('nao esta esperando parametros', 'porem envio do mesmo jeito')
+umaFucao('nao esta esperando parametros porem envio do mesmo jeito')
 
 //exemplo:
 function somaValores(X, Y, e) { //a fução pode esperar parametros tambem, e ter mais parametros do
