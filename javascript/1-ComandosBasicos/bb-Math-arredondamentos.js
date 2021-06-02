@@ -25,5 +25,3 @@ let pi = Math.PI; //Atribui a variavel o valor de pi
 console.log(pi)
 console.log(Math.pow(2, 2)); //pow(base, expoente) , ou console.log(2**2);
 console.log(Math.sqrt(9)); //pega a raiz quadrada de 9
-
-

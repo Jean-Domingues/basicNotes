@@ -53,7 +53,7 @@ let unindo = istoSeraString.join(' '); //parametro: caractere separador por padr
 
 //TRANSFORMA UMA STRING EM UM ARRAY (Array.From(nomeArray))
 const numeros = '12345678';
-const numerosSeparados = Array.from(numeros)
+const numerosSeparados = Array.from(numeros) // [1,2,3,4,5,6,7,8]
 
 
 //REPETE UM MESMO ELEMENTO DE UMA STRING N VEZES  
@@ -63,7 +63,7 @@ let soUns =  nums[0].repeat(4) //saida: 1111
 
 //CRIA ARRAY E PREENCHE SUAS POSIÇÕES
 const meuNovoArray = Array(10).fill(0)
-console.log('meu array', meuNovoArray);
+console.log('meu array', meuNovoArray); // [0,0,0,0,0,0,0,0,0,0]
 
 
 // MÉTODOS PARA PESQUISA EM ARRAYS

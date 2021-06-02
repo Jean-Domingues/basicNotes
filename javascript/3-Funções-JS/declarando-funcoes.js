@@ -1,17 +1,14 @@
 //EM JAVASCRIPT, FUNÇÕES SÃO TRATADAS COMO DADOS TAMBEM, PORTANTO, TEM O MESMO COMPORTAMENTO
 // DE UM DADO QUALQUER, PODENDO SER PASSADAS POR PARAMETRO
 
-/*
 //DECLARAÇÃO LITERAL, ONDE OCORRE HOISTING (elevação da declaração)
 function falaOi(){
     console.log('oi');
 }
-*/
 
 /*...............................................................*/
 
 
-/*
 //ATRIBUINDO A VARIAVEIS/CONSTANTES
 //funções são First-class objects (objetos de primeira classe)
 
@@ -28,23 +25,21 @@ function executaFuncao(funcao){
     //return funcao();
 }
 executaFuncao(souUmdado);   //passa uma função como parametro para outra funcao
-*/
+
 
 /*...............................................................*/
 
 
-/*
 //ARROW FUNCTION
 let umaArrowFunction = (parametro) => {
     console.log('sou uma arrow function');
 }
 umaArrowFunction();
-*/
+
 
 /*...............................................................*/
 
 
-/*
 //DECLARADO COMO DENTRO DE UM OBJETO
 //primeira forma declarando dentro de um atributo, mais antiga
 const obj = {
@@ -60,4 +55,3 @@ const obj2 = {
     }
 }
 obj2.falar();
-*/

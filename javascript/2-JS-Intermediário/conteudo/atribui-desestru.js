@@ -1,5 +1,5 @@
 //ATRIBUIÇÃO VIA DESESTRUTURAÇÃO
-/*
+
 //USANDO PARA SWAP
 let a = 'A'
 let b = 'B'
@@ -40,6 +40,4 @@ const matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 // console.log(oito);  //saida oito
 const [lista1, lista2, lista3] = matriz;
 console.log(lista1[2]); //saida = 3
-
-*/
 
