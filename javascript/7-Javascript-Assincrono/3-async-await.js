@@ -1,8 +1,10 @@
-//Uma maneira enxuta de executar promises
-/*
-Uma função async permite eu utilizar o wait para "esperar" uma promise, para
-que seja executada a posterior, dando assim, uma falsa impressão de sincronismo
+//* Uma maneira enxuta de executar promises
 
+/*
+  Uma função async permite eu utilizar o await para "esperar" uma promise, para
+  que seja executada a posterior, dando assim, uma falsa impressão de sincronismo
+
+  ! ASYNC AWAIT SÓ FUNCIONA DENTRO DE UMA FUNÇÃO
 */
 
 function rand(min = 1, max = 3) {
@@ -63,7 +65,7 @@ console.log('3 frase')
 'este executa conforme o esperado, pois as funções estão no mesmo escopo'
 /** 
 const doSomething = async () => {
-  console.log(await doSomethingAsync())]
+  console.log(await falaUmaFrase())
   console.log('3 frase')
 }
 

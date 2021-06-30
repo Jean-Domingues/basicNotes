@@ -46,7 +46,7 @@ consultaAlgo(1, rand(1, 3), function () {
 /*********************************************************************** */
 
 
-//PROMISES
+// ! PROMISES
 
 function esperaUmMomento(msg, tempo) {
     //Parametros de uma promise: (seDerCerto, seDerErrado)
@@ -62,17 +62,28 @@ function esperaUmMomento(msg, tempo) {
     })
 }
 
-//Quando queremos executar algo de forma sequencial, retornamos no then outra
-// promise que será executada pelo próximo then, e assim por diante
+//! Quando queremos executar algo de forma sequencial, retornamos no then outra
+//!   promise que será executada pelo próximo then, e assim por diante
 
-esperaUmMomento('1 frase', rand(1, 3)).then(msg => {
-    console.log(msg)
-    return esperaUmMomento('2 frase', rand(1, 3))
-}).then(msg => {
-    console.log(msg)
-    return esperaUmMomento('ssss', rand(1,3))
-}).then(msg => {
-    console.log(msg)
-}).catch(msg => {
-    console.log('ERRO: ' + msg)
+// esperaUmMomento('1 frase', rand(1, 3)).then(msg => {
+//     console.log(msg)
+//     return esperaUmMomento('2 frase', rand(1, 3))
+// }).then(msg => {
+//     console.log(msg)
+//     return esperaUmMomento('ssss', rand(1,3))
+// }).then(msg => {
+//     console.log(msg)
+// }).catch(msg => {
+//     console.log('ERRO: ' + msg)
+// })
+
+
+// ! Se não utilizarmos await dentro do código, não é necessário criar uma função async, porém é uma boa prática informar
+
+function retornandoThenNaoPrecisaDeAsync (){
+  return esperaUmMomento('1 frase', 1000).then(msg => (msg));
+}
+
+retornandoThenNaoPrecisaDeAsync().then(oi => {
+  console.log(oi);
 })
